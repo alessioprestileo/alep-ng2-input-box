@@ -1,6 +1,6 @@
 {
-  "name": "alep-ng2-table",
-  "version": "3.0.1",
+  "name": "alep-ng2-input-box",
+  "version": "0.0.0",
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "postinstall": "typings install",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alessioprestileo/alep-ng2-table.git"
+    "url": "https://github.com/alessioprestileo/alep-ng2-input-box.git"
   },
   "author": {
     "name": "Alessio Prestileo",
@@ -23,7 +23,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alessioprestileo/alep-ng2-table.git/issues"
+    "url": "https://github.com/alessioprestileo/alep-ng2-input-box.git/issues"
   },
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -31,24 +31,24 @@
     "bootstrap": "^3.3.7"
   },
   "devDependencies": {
-    "@angular/common": "^2.2.4",
-    "@angular/compiler": "^2.2.4",
-    "@angular/core": "^2.2.4",
-    "@angular/forms": "^2.2.4",
-    "@angular/http": "^2.2.4",
-    "@angular/platform-browser": "^2.2.4",
-    "@angular/platform-browser-dynamic": "^2.2.4",
-    "@angular/router": "^3.2.4",
-    "@angular/upgrade": "^2.2.4",
-    "angular-in-memory-web-api": "^0.1.16",
+    "@angular/common": "^2.3.1",
+    "@angular/compiler": "^2.3.1",
+    "@angular/core": "^2.3.1",
+    "@angular/forms": "^2.3.1",
+    "@angular/http": "^2.3.1",
+    "@angular/platform-browser": "^2.3.1",
+    "@angular/platform-browser-dynamic": "^2.3.1",
+    "@angular/router": "^3.3.1",
+    "@angular/upgrade": "^2.3.1",
+    "angular-in-memory-web-api": "^0.2.1",
     "angular-cli": "^1.0.0-beta.21",
     "bootstrap": "^3.3.7",
-    "codelyzer": "^2.0.0-beta.1",
+    "codelyzer": "^2.0.0-beta.3",
     "core-js": "^2.4.1",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.5.2",
-    "rxjs": "5.0.0-rc.4",
-    "tslint": "^4.0.2",
+    "rxjs": "5.0.1",
+    "tslint": "^4.1.1",
     "typescript": "^2.0.10",
     "typings": "^2.0.0",
     "zone.js": "^0.7.2"

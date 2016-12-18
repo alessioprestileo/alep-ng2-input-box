@@ -9,12 +9,12 @@
     </div>
   </div>
   <div class="row">
-    <div #tableRow
-         class="col-sm-offset-1 col-sm-10"
-         style="text-align: center">
-      <alep-ng2-table *ngIf="tableInput"
-                 [tableInput]="tableInput">
-      </alep-ng2-table>
+    <div #inputBoxRow
+         class="col-sm-offset-1 col-sm-10">
+      <alep-ng2-input-box
+              *ngIf="formGroup.controls['name']"
+              [inFormControl]="formGroup.controls['name']">
+      </alep-ng2-input-box>
     </div>
   </div>
 </div>
