@@ -7,7 +7,7 @@
     {
       "root": "dev",
       "outDir": "dist_dev",
-      "assets": "assets",
+      "assets": ["assets"],
       "index": "index.html",
       "main": "main.ts",
       "test": "test.ts",

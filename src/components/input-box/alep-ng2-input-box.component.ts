@@ -3,8 +3,52 @@ import { FormControl, FormControlDirective } from '@angular/forms';
 
 @Component({
   selector: 'alep-ng2-input-box',
-  templateUrl: 'alep-ng2-input-box.component.html',
-  styleUrls: ['alep-ng2-input-box.component.css']
+template: `
+<div class="container-fluid"
+     style="padding-left: 0;
+            padding-right: 0">
+  <div class="row">
+    <div class="col-sm-4">
+      <label [ngClass]="labelCssClass ? labelCssClass : labelDefaultCssClass">
+        {{label}}
+      </label>
+    </div>
+    <div class="col-sm-8">
+      <div class="form-group"
+           [ngClass]="{'has-error': hasError(boxControl),
+                       'has-success': hasSuccess(boxControl),
+                       'has-feedback': hasError(boxControl) ||
+                                       hasSuccess(boxControl)}"
+           style="margin-bottom: 0">
+        <input #box #boxControl="ngForm"
+               [ngClass]="boxCssClass ? boxCssClass : boxDefaultCssClass"
+               [formControl]="inFormControl"
+               [type]="type">
+        <span [ngClass]="{
+              'glyphicon form-control-feedback':
+                  hasError(boxControl) || hasSuccess(boxControl),
+              'glyphicon-remove': hasError(boxControl),
+              'glyphicon-ok': hasSuccess(boxControl)}">
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`,
+styles: [
+`.alep-ng2-input-box {
+    height: 3.5rem;
+    padding-left: 1rem;
+    width: 100%
+}
+.alep-ng2-input-box-label {
+    font-size: 2rem;
+    font-weight: normal;
+    min-height: 3.5rem;
+    margin-bottom: 0px;
+    vertical-align: middle;
+}
+`],
 })
 export class AlepNg2InputBoxComponent implements DoCheck, OnInit {
   @Input() private inFormControl: FormControl;
